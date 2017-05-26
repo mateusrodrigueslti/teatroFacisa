@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Teatro Facisa</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <div>
+            <img src="http://placehold.it/1370x900" alt="">
+
+        </div>
+
+
+    </ion-card>
+
+    <ion-card *ngFor="let item of [1,2,3,4,5,6,7,8]; let i=index">
+        <ion-card-header [innerHtml]="'Espatáculo ' + i"></ion-card-header>
+
+        <ion-card-content>
+            <img src="http://placehold.it/1370x450" alt="">
+        </ion-card-content>
+
+    </ion-card>
+</ion-content>
